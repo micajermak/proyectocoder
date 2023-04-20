@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo:wght@300;400;700&family=Roboto:wght@100;400&family=Sacramento&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  border: none;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+
+}
+
+
+header nav a {
+    color: #707070;
+    padding: 18px;
+  
+  }
+  
+  header nav a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .cuenta {
+    display: block;
+   
+  }
+
+  .cuenta a{
+    color: #434242;
+    padding: 20px;;
+  }
+
+  .cuenta a:hover{
+    text-decoration: underline;
+  }
+
+
+
+header button {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ece9ea;
+    background-color: #ff00ae;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+   
+  
+  }
+  
+header button:hover {
+    background-color: #dd4493;
+    color: #fff;
+  }
+
+
+
+  /*titulo */
+  .titulo a {
+    display: block;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    font-size: 40px;
+    color: #000;
+    font-weight: 550;
+  }
+  
+
+
+
+
+  /*herobanner */
+  
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Sacramento", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #707070;
+    width: 100%;
+    height: 1000px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero h1 {
+  font-size: 60px;
+  color: #434242;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+}
+.hero p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.hero ul{
+    text-align: center;
+}
+
+.hero ul p{
+    color: #000;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.hero li{
+    color: #707070;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero img{
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+/*-devoluciones */
+
+/*Tarjetas personales*/
+
+.datos {
+    margin-top: 200px;
+    padding: 60px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.datos .personal{
+    margin: 20px;
+    background-color: #e8dcdf;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+
+}
+
+
+.datos .personal ul li:hover{
+    background-color: #00D647;
+    border-radius: 10px;
+}
+
+.datos .personal ul .active{
+    color: #00D647;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.datos .info{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .info2{
+    width: 33%;
+    padding: 20px;
+    margin: 10px;
+
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+   
+    border-radius: 10px;
+    background-color: #f2e7eb;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+}
+
+.info .info2 h3{
+    text-align: center;
+
+
+}
+.info .info2 p{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info .info2 button{
+   
+    background-color: #000;
+    color: #ECE9EA;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor:pointer;
+    align-items: center;
+}
+
+.info .info2 button:hover{
+    background-color: #00D647;
+    color: #ECE9EA;
+}
+
+.info .info2 img{
+   width: 80px;
+   vertical-align: middle;
+}
+
+.info .info2 img:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;   
+}
+
+
+
+
+
+/*separador */
+
+.donantes{
+  height: 500px;
+  width: 100%;
+  font-size: 20px;
+  color: #3e3a3c;
+  background-color: #fbf6f8;
+  text-align: center;
+}
+
+.donantes h2{
+  padding: 60px;
+  margin-top: 10px;
+}
+
+.donantes p{
+  color: #3e3a3c;
+  margin-top: 20px;
+}
+
+.donantes img{
+  width: 80px;
+}
+
+
+
+
+
+
+/*Footer*/
+
+.gridFooter div>div {
+  padding: 1rem;
+  display: flex;
+
+}
+
+.galeria {
+  height: 900px;
+  width: 100%;
+  padding: 130px;
+  background-color: #000;
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas:
+    "img1 img2 img3 img4 img5"
+    "img1 img2 img3 img4 img6"
+    "img1 img2 img3 img4 img7"
+    "img8 img8 img8 img8 img8";
+  grid-gap: 20px;
+  padding-top: 40px;
+}
+
+.img p {
+  color: grey;
+  padding: 2px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.img ul {
+  list-style: none;
+  padding: 2px;
+  line-height: 40px;
+}
+
+.img li a{
+  color: #f3f1f1;
+
+}
+
+.img li a:hover{
+  text-decoration: underline;
+}
+
+.img {
+  background-color: #000;
+  border-radius: 10px;
+  color: #f3f1f1;
+}
+
+.img img {
+  width: 40px;
+  
+}
+
+.img button {
+  border-radius: 8px;
+  margin: 2px;
+  border: 1px solid #434242;
+  background-color: #000;
+  color: #707070;
+  padding: 2px;
+  width: 150px;
+}
+
+.img select {
+  color: #fff;
+  font-size: 15px;
+  background-color: #434242;
+  
+}
+
+.img button:hover {
+  background-color: #3e3a3c;
+}
+
+.img1 {
+  grid-area: img1;
+  background-color: #000;
+  
+}
+
+.img2 {
+  grid-area: img2;
+  background-color: #000;
+ 
+}
+
+.img3 {
+  grid-area: img3;
+  background-color: #000;
+  
+}
+
+.img4 {
+  grid-area: img4;
+  background-color: #000;
+  
+}
+
+.img5 {
+  grid-area: img5;
+  background-color: #000;
+  
+}
+
+.img6 {
+  grid-area: img6;
+  background-color: #000;
+  
+}
+
+.img7 {
+  grid-area: img7;
+  background-color: #000;
+  margin-top: 20px;
+ 
+}
+
+.img i {
+  letter-spacing: 30px;
+  font-size: 19px;
+}
+
+.img i:hover{
+  color: #707070;
+}
+
+.img8 {
+  grid-area: img8;
+ 
+  margin-top: 90px;
+  padding: 40px;
+  
+  
+  background-color: #000;
+  
+
+}
+
+.redes {
+  color: aliceblue;
+  letter-spacing: 30px;
+  font-size: 40px;
+}
+
+footer p {
+  color: aliceblue;
+}
+footer {
+  background-color: #000;
+  height: 500px;
+}

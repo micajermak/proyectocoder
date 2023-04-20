@@ -150,7 +150,11 @@ header button:hover {
     padding: 20px;
 }
 
-/*-vida*/
+/*-Mascotas*/
+
+
+
+/*-Vida*/
 
 .hero button {
   width: 400px;
@@ -188,13 +192,79 @@ header button:hover {
     color: #434242;
     font-size: 20px;
     font-weight: 100;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .sonrie img{
     vertical-align: middle;
 
   }
+
+.abuelo{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#uno, #dos { 
+  width: 500px;
+  color: #FFF;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#uno p:hover{
+  transform: scale(1.09);
+  transition: all 0.9s;
+}
+
+#dos p:hover{
+  transform: scale(1.09);
+  transition: all 0.9s;
+}
+
+.abuelo img{ 
+  width: 500px;
+  height: 450px;
+}
+
+#uno {
+  background-color:#707070;
+  
+}
+
+#dos {
+  background-color:#7c6cd7;
+
+  }
+
+#uno h2, #dos h2 {
+  margin-bottom: 32px;
+}
+  
+  
+.final{
+  height: 400px;
+  background-color: #ECE9EA;
+  margin-top: 30px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.final h2{
+  padding: 60px;
+  font-size: 80px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.final p{
+  font-size: 30px;
+  font-weight: 200;
+}
+ 
 
 /*-devoluciones */
 

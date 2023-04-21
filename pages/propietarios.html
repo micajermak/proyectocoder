@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>propietarios</title>
 </head>
@@ -78,21 +79,60 @@
 
           </li>
         </ul>
-        <img src="/img/casaahora.jpg" alt="">
-        
       </div>
-   
     </div>
   </section>
-  
-  <!--Secciones-->
 
+  <!--Formulario-->
+  <section class="formulario">
+      <h2>Cotiza y Contrata</h2>
+      
+      <form action="#" method="post">
+        <p>
+         Ingresa tus datos y los de tu hogar
+        </p>
 
-<!--Formulario con Bootstrap-->
-   <form action="">
-    
-   </form>
+        <div class="grupo">
+         <label for="name">Nombre</label>
+         <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" maxlength="20">
+         <br>
+         <label for="apellido">Apellido</label>
+         <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" maxlength="20">
+         <br>
+         <label for="email">E-mail</label>
+         <input type="email" name="email" id="email" placeholder="Ingresa tu email" maxlength="40">
+         <br>
+         <label for="phone">Telefono</label>
+         <input type="tel" name="phone" id="phone" placeholder="Ingresa tu telefono">
+         <br>
+         <label for="cp">Codigo postal</label>
+         <input type="number" name="cp" id="cp" placeholder="Ingresa tu Cod.Postal">
+         <br>
+         <label for="calle">Calle</label>
+         <input type="text" name="calle" id="calle" placeholder="Ingresa la calle">
+         <br> 
+         <label for="num">Numero</label> 
+         <input type="number" name="num" id="num" placeholder="Ingresa el numero">
 
+         <div class="calle">  
+          <label class="piso" for="piso">Piso</label> 
+          <input type="number" name="piso" id="piso" placeholder="Ingresa el piso">
+          <label class="piso" for="dep">Depto/Otros</label>
+          <input type="text" name="dep" id="dep" placeholder="Ingresa el dpto.">
+         </div>
+
+        <input class="botones" type="submit" value="Cotizar">
+      </div>
+    </form>
+  </section>
+ 
+ <!--Secciones-->
+ <section class="llamada">
+  <h3>Tambien podes cotizar llamando al <br>
+    <i class="fa-solid fa-phone">0810-333-3222</i>
+  </h3>
+
+ </section>
 
   <!--Footer-->
   <footer>

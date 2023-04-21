@@ -123,6 +123,188 @@ header button:hover {
   padding: 20px;
 }
 
+/*-Auto*/
+.rapido {
+  text-align: center;
+}
+
+.rapido h1 {
+  font-size: 60px;
+  color: #434242;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.rapido p {
+  font-size: 20px;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.rapido button{
+  margin-top: 30px;
+  width: 500px;
+  height: 60px;
+  background-color: rgba(58, 24, 191, 0.818);
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px 1px #7606cb;
+  color: #ece9ea;
+  text-transform: uppercase;
+}
+
+.rapido button:hover{
+  background-color: #7606cb;
+}
+
+.auto{
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.auto img{
+  width: 800px;
+  margin: auto;
+}
+.mujer{
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}
+
+.moto {
+  margin-top: 40px;
+  padding: 60px;
+  text-align: center;
+}
+
+.moto .perdida{
+  margin: 20px;
+  background-color: #6767b8;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.moto .perdida ul li:hover {
+  background-color: #0700d6;
+  border-radius: 10px;
+}
+
+.moto .perdida ul .active {
+  color: #0700d6;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.moto .lucro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lucro .fin {
+  width: 33%;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.lucro .fin h3 {
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.lucro .fin p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.lucro .fin button {
+  background-color: #000;
+  color: #ece9ea;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.lucro .fin button:hover {
+  background-color: #0700d6;
+  color: #ece9ea;
+}
+
+.lucro .fin img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.lucro .fin img:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+}
+
+.paquete {
+  height: 600px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #3e3a3c;
+  background-color: #fbf6f8;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.paquete h2 {
+  padding: 60px;
+}
+
+.paquete p {
+  color: #3e3a3c;
+  width: 250px;
+}
+
+.movil img {
+  width: 80px;
+ 
+}
+.movil img:hover{
+   transform: scale(1.1);
+  transition: 0.9s;
+  background-color: #3b35dc;
+  border-radius: 20px;
+}
+
+
+.paquete a:hover{
+  transform: scale(1.1);
+  transition: 0.9s;
+  background-color: #3b35dc;
+  color: #fff;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 /*-Mascotas*/
 .peludos {
   text-align: center;

@@ -125,6 +125,258 @@ header button:hover {
 
 /*Rentas*/
 
+.small{
+  text-align: center;
+}
+
+.small h1 {
+  font-size: 60px;
+  color: #434242;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.small h2{
+  font-size: 25px;
+  color: #434242;
+  font-weight: 200;
+}
+
+.small p {
+  font-size: 20px;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.small button {
+  margin-top: 20px;
+  width: 500px;
+  height: 60px;
+  background-color: #845EC2;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px 1px #7c40a9;
+  color: #ece9ea;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.small button:hover {
+  background-color:#C493FF;
+  color: #434242;
+}
+
+.small img{
+  max-width: 900px;
+}
+
+
+.gris {
+  text-align: center;
+}
+
+.gris h2 {
+  font-size: 50px;
+  margin-top: 50px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.gris p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.oreja {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+.pie {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: rgb(74, 72, 72) solid 1px;
+  border-radius: 600px;
+  background-color:#B39CD0;
+  box-shadow: 2px 2px 2px 2px #FBEAFF;
+}
+
+.pie h3 {
+  max-width: 200px;
+  margin: auto;
+  padding-top: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+.pie:hover {
+  background-color:#F3C5FF;
+  color: #434242;
+}
+.pie p {
+  color: #fff;
+  margin: auto;
+  padding: 20px;
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.tricolor{
+  margin-top: 20px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, #9966ee, #aa7feb, #b897e8, #c6afe4, #d2c7e0);
+}
+
+.form h1{
+  margin: 10px 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form p{
+  font-size: 16px;
+  text-align: center;
+}
+
+.sombra{
+  background-color: rgb(241, 222, 239);
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.form{
+  width: 100%;
+  margin: auto;
+}
+
+.gru{
+  position: relative;
+  margin: 15px ;
+  border: none;
+  border-bottom: 1px solid #6767b8;
+  width: 170px;
+  resize: none;
+}
+.gru input:focus{
+  outline: none;
+  color: #7c40a9;
+}
+
+.gru input{
+  background-color: rgb(241, 222, 239);
+}
+
+.tricolor button{
+  color: #6767b8;
+  background-color: #fbf6f8;
+  width: 90%;
+  padding: 10px -10;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 20px;
+ 
+}
+
+.tricolor button:hover{
+  background-color: #6767b8;
+  color: #f3f1f1;
+}
+
+
+.renta {
+  display: flex;
+  justify-content: center;
+
+}
+.inquilino {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.inquilino img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.inquilino h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  width: 300px;
+  margin-right: 80px;
+  margin-left: 80px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #6767b8;
+}
+
+.inquilino p {
+  text-align: center;
+  padding-bottom: 50px;
+  width: 300px;
+  margin-right: 80px;
+  margin-left: 80px;
+  color: #434242;
+  margin-top: 10px;
+}
+
+
+
+
+.seguridad {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#feliz,
+#triste {
+  width: 500px;
+  color: #3e3a3c;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+#feliz p:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+}
+
+#triste p:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+}
+
+#feliz {
+  background-color:#C493FF;
+}
+
+#triste {
+  background-color: #9966ee;
+}
+
+#feliz h2,
+#triste h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+
 
 
 
@@ -149,10 +401,10 @@ header button:hover {
 
 .propiedad button{
   margin-top: 30px;
-  width: 400px;
+  width: 500px;
   height: 60px;
   background-color: rgba(208, 144, 41, 0.818);
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 20px;
   box-shadow: 2px 2px 2px 1px #a16743;
   color: #ece9ea;

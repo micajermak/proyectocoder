@@ -59,7 +59,7 @@ header a:hover {
 }
 
 .hero button:hover {
-  background-color: #d85209;
+  background-color: #FF4CCA;
   color: #fff;
 }
 /*herobanner */
@@ -68,11 +68,11 @@ header a:hover {
   display: flex;
   justify-content: space-around;
   font-family: "Sacramento", cursive;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: rgb(105, 98, 98);
   height: 750px;
-  background-image: url(../img/feliz.webp);
+  background-image: url(../img/coverix5.jpg);
   background-repeat: no-repeat;
   background-size:cover;
  
@@ -83,10 +83,10 @@ header a:hover {
   color: #494141;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .hero p {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -127,7 +127,7 @@ header a:hover {
   margin: 10px;
   height: 250px;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -221,7 +221,7 @@ header a:hover {
 }
 
 .compra .promo .info button {
-  background-color: #f8920c;
+  background-color: #00C1E5;
   color: #fff;
   text-transform: uppercase;
   border-radius: 8px;
@@ -231,7 +231,7 @@ header a:hover {
 }
 
 .compra .promo .info button:hover {
-  background-color: #dd4493;
+  background-color: #FF4CCA;
   color: #ece9ea;
 }
 .compra .promo span {
@@ -256,34 +256,53 @@ header a:hover {
 
 /*Section celular */
 
-.celular {
-  background-color: #fff;
+
+
+.celular{
+  position: relative;
+}
+
+.celular video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit:cover;
+}
+
+.celular h2{
+  background-color: rgb(43, 40, 40);
   text-align: center;
-}
-
-.celular h3 {
+  font-weight: 400;
   font-size: 40px;
-  font-weight: bold;
-  padding: 60px 0px 2px;
-}
-
-.celular p {
-  margin-bottom: 30px;
-}
-
-.celular img {
-  width: 400px;
+  mix-blend-mode:overlay;
+  color: #fff;
   height: 300px;
+  padding-top: 40px;
 }
 
-.minutos {
-  display: flex;
-  justify-content: center;
+.celular p{
+  background-color: rgb(43, 40, 40);
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  mix-blend-mode:overlay;
+  color: #fff;
+  height: 300px;
+
 }
 
-.minutos p {
-  padding-top: 100px;
+@media (max-widht:960px) {
+  .celular{
+    font-size: 20px;
+  }
 }
+
+
+
+
+
 
 /*separador globos */
 
@@ -326,7 +345,7 @@ header a:hover {
 }
 
 .globo button {
-  background-color: #f90081;
+  background-color: #00C2B8;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 50px;
@@ -337,8 +356,9 @@ header a:hover {
 }
 
 .globo button:hover {
-  background-color: #dd4493;
+  background-color: #FF4CCA;
   color: #ece9ea;
+  transition: 500ms;
 }
 
 /*separador limonada */
@@ -465,8 +485,8 @@ header a:hover {
   padding: 4px 0px;
   margin: 2px 0px 0px 200px;
   height: 30px;
-  background-color: #6255ab;
-  border: 1px solid #665aad;
+  background-color: #00C2B8;
+  border: 1px solid #08ebe0;
   border-radius: 6px;
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
@@ -474,9 +494,9 @@ header a:hover {
  
 }
 
-#contacto button:hover 
-{
-background-color: #281784;
+#contacto button:hover {
+background-color: #FF4CCA;
+border: #e72288;
 
 }
 
@@ -485,7 +505,7 @@ background-color: #281784;
 .ubicacion{
   width: 100%;
   height: 550px;
-  background-color: #605796;
+  background-image: linear-gradient(to right top, #f90081, #fd5372, #f97d71, #f19e7e, #e9bb9a, #e8c09c, #e6c49e, #e4c9a1, #e4bb80, #e4ab5f, #e39c3d, #e28b11);
   text-align: center;
   
 }

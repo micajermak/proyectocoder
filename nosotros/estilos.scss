@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Manrope:wght@200;300;400&display=swap');
+
+$color1:  #FEF6FF;
+$color2:  #edebe8;
+$color3: #15043fea;
+$color4:  #8760C5;
+$color5: #F0C2FF;
+
+
+
+$font1: 'Heebo', sans-serif;
+$font2: 'Manrope', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color3;
+    color: $color1;
+    font-family: $font2;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+
+}
+
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: $color2;
+    
+    .logo{
+        color: $color1;
+        font-size: 30px;
+        font-family: $font1;
+        }
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            padding-left: 20px;
+        }
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: $color4
+
+}
+
+.form{
+    min-height: 80vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-content{
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        z-index: 1;
+        margin: 25px 0 20px;
+    }
+        .form-content p{
+            text-align: center;
+        }
+
+         .box {
+            border: 1px solid $color2;
+            padding: 40px 50px;
+            border-radius: 20px;
+         }
+            h3{
+                font-size: 28px;
+                text-align: center;
+                line-height: 1.2;
+                color: $color1;
+                margin-bottom: 40px;
+                font-weight: 500;
+            }
+
+            .input-box{
+                margin-bottom: 25px;
+            }
+
+            .input-control{
+                height: 45px;
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: inherit;
+                font-weight: inherit;
+                font-family: inherit;
+                font-size: 16px;
+                border-bottom: 1px solid #333;
+            }
+
+            .input-control:focus{
+                outline: none;
+            }
+
+            .input-link{
+                margin-top: 10px;
+                text-align: right;
+
+            }
+
+            .btn{
+                height: 50px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: inherit;
+                cursor: pointer;
+                margin-bottom: 15px;
+                border-radius: 25px;
+                user-select: none;
+                border: none;
+                color: $color1;
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(#F0C2FF, #8760C5, #432581) ;
+            }
+
+            .btn:hover{
+                 color: #333;
+            }
+    
+
+}
+
+.gradient-text{
+    background-color: #cbc6d2;
+    background-clip: text ;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cajas{
+    display: flex;
+    justify-content: center;
+}
+
+.propietarios-icon,
+.auto-icon,
+.mascotas-icon,
+.vida-icon {
+    height: 200px;
+    width: 400px;
+    border: 2px solid #333;
+}
+
+
+@each $animal in propietarios , auto , mascotas , vida  {
+    .#{$animal}-icon {
+        background-image: url("img/#{$animal}.jpg");
+        background-size: cover;
+        background-position: center;
+        text-align:center;
+        font-size: 20px;
+        color: #fff;
+        filter: grayscale(100%);
+    }
+    
+}
+
+
+@each $animal in renta , propietarios , auto , mascotas , vida {
+    .#{$animal}-icon:hover {
+
+        color: #333;
+        filter: grayscale(0%);
+    }
+    
+}
+
+
+@each $animal in renta , propietarios , auto , mascotas , vida {
+    .#{$animal}-icon h2 {
+
+        color: $color1;
+        font-family: $font2;
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 20px;
+        box-shadow:  #333;
+        filter: grayscale(0%);
+    }
+    
+}
+
+

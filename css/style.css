@@ -92,6 +92,9 @@ header a:hover {
   text-align: center;
 }
 
+.hero a{
+  color:#fff;
+}
 
 
 /*section estrellas*/
@@ -186,6 +189,10 @@ header a:hover {
   font-size: 40px;
   font-weight: 520;
   color: #434242;
+}
+
+.subscripcion a{
+  color:#fff;
 }
 
 .subscripcion p {
@@ -300,10 +307,6 @@ header a:hover {
 }
 
 
-
-
-
-
 /*separador globos */
 
 .globo {
@@ -312,6 +315,10 @@ header a:hover {
   padding: 20px;
 }
 
+.globo a{
+    color:#fff;
+  
+}
 .globo h3 {
   color: #434242;
   font-size: 40px;

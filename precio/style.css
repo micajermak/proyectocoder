@@ -17,12 +17,16 @@
     color: #707070; !important;
 }
 
+.lead{
+    text-align:left;
+}
+
 .jumbotron{
     background-image: url(../img/splash1.avif);
     background-position: center;
     background-size: cover !important;
     height: 450px;
-    margin-bottom: 0;
+    
     border-radius: 0;
     color:  #4f4e4e;
 }
@@ -33,11 +37,16 @@
 }
 
 h2{
-    color: #fff;
-    background-color:  #cbc1c1;
+    color:  #4f4b4b;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 
+}
+
+p{
+    text-align: center;
+    color: #707070;
+    font-size: 20px;
 }
 
 .card-body{
@@ -84,3 +93,50 @@ h2{
     color: #707070;
     font-size: 20px;
 }
+
+
+.segunda{
+    width: 100%;
+    background-color: #e3e2e0;
+
+}
+
+.izquierda{
+    text-align: center;
+}
+
+.izquierda h3{
+    padding: 50px;
+    color: #4f4e4e;
+    font-size: 30px;
+}
+
+.derecha{
+     
+    background-image: url(../img/familia-sonriente-posando-juntos-parque_107420-82188.avif) ;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.left{
+    height: 450px;
+    background-image: url(../img/baile.webp) ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.espacio{
+    height:60px;
+}
+
+.final{
+    height: 300px;
+}
+
+.final h2{
+    padding-top: 80px;
+    text-align: center;
+}
+

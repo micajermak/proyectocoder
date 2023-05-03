@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Manrope:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(21, 4, 63, 0.9176470588);
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #edebe8;
+}
+header .logo {
+  color: #FEF6FF;
+  font-size: 30px;
+  font-family: "Heebo", sans-serif;
+}
+header a {
+  text-decoration: none;
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #8760C5;
+}
+
+.form {
+  min-height: 80vh;
+  padding: 60px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .form-content {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  z-index: 1;
+  margin: 25px 0 20px;
+}
+.form .form-content p {
+  text-align: center;
+}
+.form .box {
+  border: 1px solid #edebe8;
+  padding: 40px 50px;
+  border-radius: 20px;
+}
+.form h3 {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.2;
+  color: #FEF6FF;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.form .input-box {
+  margin-bottom: 25px;
+}
+.form .input-control {
+  height: 45px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
+}
+.form .input-control:focus {
+  outline: none;
+}
+.form .input-link {
+  margin-top: 10px;
+  text-align: right;
+}
+.form .btn {
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  color: #FEF6FF;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#F0C2FF, #8760C5, #432581);
+}
+.form .btn:hover {
+  color: #333;
+}
+
+.gradient-text {
+  background-color: #cbc6d2;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.cajas {
+  display: flex;
+  justify-content: center;
+}
+
+.propietarios-icon,
+.auto-icon,
+.mascotas-icon,
+.vida-icon {
+  height: 200px;
+  width: 400px;
+  border: 2px solid #333;
+}
+
+.propietarios-icon {
+  background-image: url("img/propietarios.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  filter: grayscale(100%);
+}
+
+.auto-icon {
+  background-image: url("img/auto.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  filter: grayscale(100%);
+}
+
+.mascotas-icon {
+  background-image: url("img/mascotas.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  filter: grayscale(100%);
+}
+
+.vida-icon {
+  background-image: url("img/vida.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  filter: grayscale(100%);
+}
+
+.renta-icon:hover {
+  color: #333;
+  filter: grayscale(0%);
+}
+
+.propietarios-icon:hover {
+  color: #333;
+  filter: grayscale(0%);
+}
+
+.auto-icon:hover {
+  color: #333;
+  filter: grayscale(0%);
+}
+
+.mascotas-icon:hover {
+  color: #333;
+  filter: grayscale(0%);
+}
+
+.vida-icon:hover {
+  color: #333;
+  filter: grayscale(0%);
+}
+
+.renta-icon h2 {
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
+  box-shadow: #333;
+  filter: grayscale(0%);
+}
+
+.propietarios-icon h2 {
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
+  box-shadow: #333;
+  filter: grayscale(0%);
+}
+
+.auto-icon h2 {
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
+  box-shadow: #333;
+  filter: grayscale(0%);
+}
+
+.mascotas-icon h2 {
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
+  box-shadow: #333;
+  filter: grayscale(0%);
+}
+
+.vida-icon h2 {
+  color: #FEF6FF;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
+  box-shadow: #333;
+  filter: grayscale(0%);
+}/*# sourceMappingURL=estilos.css.map */

@@ -51,6 +51,23 @@ header button {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+.peludos button a{
+  color: rgb(231, 225, 225);
+}
+.propiedad button a{
+  color: rgb(231, 225, 225); 
+}
+.small button a{
+  color: rgb(231, 225, 225); 
+}
+
+.hero button a{
+  color: rgb(228, 214, 214);
+}
+.rapido button a{
+  color: rgb(228, 214, 214);
+}
 header button:hover {
   background-color: #dd4493;
   color: #fff;

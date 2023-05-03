@@ -1,0 +1,86 @@
+.navbar{
+    background-color:  #707070;
+}
+
+.navbar span{
+    color:#e4802f;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler i{
+    color:  #707070;
+}
+
+.navbar .nav-link{
+    color:#fff !important;
+}
+
+.jumbotron{
+    background-image: url(../img/splash1.avif);
+    background-position: center;
+    background-size: cover !important;
+    height: 450px;
+    margin-bottom: 0;
+    border-radius: 0;
+    color:  #4f4e4e;
+}
+
+.jumbotron .btn:hover{
+    color: #fff;
+    background-color: #e4802f;
+}
+
+h2{
+    color: #fff;
+    background-color: #e4802f;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.card-body{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-title{
+    color: #4f4e4e;
+    font-size: 25px;
+}
+
+.card img{
+    height: 280px;
+}
+
+.nosotros{
+    width: 100%;
+    background-color: #c4c2c0;
+
+}
+.nleft{
+    height: 450px;
+    background-image: url(../img/empresa.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.nright{
+    text-align: center;
+}
+
+.nright h3{
+    padding: 50px;
+    color: #4f4e4e;
+    font-size: 30px;
+}
+
+.coverix{
+    color: #e4802f;
+}
+
+.nright p{
+    color: #fff;
+    font-size: 20px;
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Manrope:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo:wght@300;400;700&family=Roboto:wght@100;400&family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,8 @@
 }
 
 body {
-  background-color: rgba(21, 4, 63, 0.9176470588);
-  color: #FEF6FF;
+  background-color: #fff;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -18,12 +19,16 @@ body {
 header {
   height: 100px;
   width: 100%;
-  background-color: #edebe8;
+  background-color: #ece9ea;
 }
 header .logo {
-  color: #FEF6FF;
+  color: #707070;
   font-size: 30px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Sacramento", cursive;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 550;
 }
 header a {
   text-decoration: none;
@@ -34,7 +39,7 @@ header a {
 a {
   text-decoration: none;
   font-weight: 500;
-  color: #8760C5;
+  color: #707070;
 }
 
 .form {
@@ -55,7 +60,7 @@ a {
   text-align: center;
 }
 .form .box {
-  border: 1px solid #edebe8;
+  border: 1px solid #ece9ea;
   padding: 40px 50px;
   border-radius: 20px;
 }
@@ -63,7 +68,7 @@ a {
   font-size: 28px;
   text-align: center;
   line-height: 1.2;
-  color: #FEF6FF;
+  color: #707070;
   margin-bottom: 40px;
   font-weight: 500;
 }
@@ -104,10 +109,10 @@ a {
       -ms-user-select: none;
           user-select: none;
   border: none;
-  color: #FEF6FF;
+  color: #707070;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#F0C2FF, #8760C5, #432581);
+  background: linear-gradient(#f6a904, #fb8404);
 }
 .form .btn:hover {
   color: #333;
@@ -200,7 +205,7 @@ a {
 }
 
 .renta-icon h2 {
-  color: #FEF6FF;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   margin-top: 50px;
   text-align: left;
@@ -210,7 +215,7 @@ a {
 }
 
 .propietarios-icon h2 {
-  color: #FEF6FF;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   margin-top: 50px;
   text-align: left;
@@ -220,7 +225,7 @@ a {
 }
 
 .auto-icon h2 {
-  color: #FEF6FF;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   margin-top: 50px;
   text-align: left;
@@ -230,7 +235,7 @@ a {
 }
 
 .mascotas-icon h2 {
-  color: #FEF6FF;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   margin-top: 50px;
   text-align: left;
@@ -240,7 +245,7 @@ a {
 }
 
 .vida-icon h2 {
-  color: #FEF6FF;
+  color: #707070;
   font-family: "Manrope", sans-serif;
   margin-top: 50px;
   text-align: left;

@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Manrope:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Heebo:wght@300;400;700&family=Roboto:wght@100;400&family=Sacramento&display=swap");
 
-$color1:  #FEF6FF;
-$color2:  #edebe8;
-$color3: #15043fea;
-$color4:  #8760C5;
-$color5: #F0C2FF;
+$color1:  #707070;
+$color3:  #fff;
+$color2: #ece9ea;
+$color4:  #707070;
+$color5: #de6f08;
 
 
 
-$font1: 'Heebo', sans-serif;
+$font1:  "Sacramento", cursive;
 $font2: 'Manrope', sans-serif;
 
 
@@ -39,6 +40,10 @@ header{
         color: $color1;
         font-size: 30px;
         font-family: $font1;
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 550;
         }
         a{
             text-decoration: none;
@@ -129,7 +134,7 @@ a{
                 color: $color1;
                 position: relative;
                 overflow: hidden;
-                background: linear-gradient(#F0C2FF, #8760C5, #432581) ;
+                background: linear-gradient(#f6a904, #fb8404) ;
             }
 
             .btn:hover{

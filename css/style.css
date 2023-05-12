@@ -42,7 +42,6 @@ header a:hover {
   font-size: 40px;
   color: #000;
   font-weight: 550;
-
 }
 .hero button {
   width: 200px;
@@ -106,6 +105,7 @@ header a:hover {
   background-color: #f3f1f1;
   color: #434242;
   max-height: 500px;
+  margin: auto;
 }
 
 .estrella h2 {
@@ -298,12 +298,6 @@ header a:hover {
   color: #fff;
   height: 300px;
 
-}
-
-@media (max-widht:960px) {
-  .celular{
-    font-size: 20px;
-  }
 }
 
 
@@ -529,13 +523,6 @@ border: #e72288;
     transition: all 0.8s;
 }
 
-
-
-
-
-
-
-
 /*Footer*/
 
 .gridFooter div>div {
@@ -692,5 +679,1421 @@ footer p {
 }
 footer {
   background-color: #000;
-  height: 500px;
+  height: 1000px;
 }
+
+.navbar{
+  color: #fff;
+  background-color: #fff;
+  font-size: 1px;
+  height: 1px;
+}
+
+.checkbox, .icons{
+  width: 1px;
+  height: 1px;
+}
+
+/*MEDIA QUERYS
+Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    height: 1px;
+    padding: 5px;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+    font-size: 48px;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 25px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+    color: #e28b11;
+    width: 50%;
+  }
+
+  .hero p {
+    padding: 1px;
+    width: 50%;
+    color:#000;
+  }
+
+  .hero button {
+    margin:auto;
+    width: 80%;
+    margin-top: 50%;
+    margin-left: 25px;
+  }
+
+  .estrella {
+    height: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  .estrella h2 {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 16px;
+    padding: 20px;
+    width: 98%;
+    height: 2px;
+  }
+
+  .carrousel .tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 40%;
+    padding: 2px;
+    margin: 10px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 25px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 42%;
+    height: 180px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .compra .promo span {
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  .celular h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .globo h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 15px;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .limonada .pizza img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #contacto form {
+    width: 90%; 
+  }
+  
+  #contacto button {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ubicacion iframe{
+    width: 90%;
+  }
+
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .logo .diseno h3 {
+    padding: 5px;
+  }
+
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .logo .diseno img {
+    width: 90px;
+  }
+
+  /*Footer*/
+
+  footer {
+    max-width: 100%;
+    height: 3100px
+  }
+
+  .galeria {
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .galeria .img1 img{
+    display: none !important;
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+}
+
+
+/*Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    height: 1px;
+    padding: 1px;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 60px;
+    position: relative;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 40px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 60px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 26px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 70%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero {
+    height: 820px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    color: #3c3739;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero p {
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color:#000;
+  }
+
+  .hero button {
+    margin:auto;
+    width: 80%;
+    margin-top: 50%;
+    margin-left: 25px;
+  }
+
+  .estrella {
+    margin: auto;
+  }
+
+  .estrella h2 {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+    height: 2px;
+  }
+  .carrousel .tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 40%;
+    padding: 2px;
+    margin: 10px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 25px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 42%;
+    height: 180px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .compra .promo span {
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  .celular h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .globo h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 15px;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .limonada .pizza img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #contacto form {
+    width: 90%; 
+  }
+  
+  #contacto button {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ubicacion iframe{
+    width: 90%;
+  }
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .logo .diseno h3 {
+    padding: 5px;
+  }
+
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .logo .diseno img {
+    width: 90px;
+  }
+
+  footer {
+    max-width: 100%;
+    height: 2000px;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    padding: 50px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .galeria .img1 img{
+    display: none !important;
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+
+}
+
+/* iPads 
+#Dispositivo = Tablets, Ipads  
+- Medida estandar de pantalla resolucion 768px to 1024px */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    height: 1px;
+    padding: 1px;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 60px;
+    position: relative;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 40px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 60px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 26px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 70%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero {
+    height: 820px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    color: #3c3739;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero p {
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color:#000;
+  }
+
+  .hero button {
+    margin:auto;
+    width: 80%;
+    margin-top: 50%;
+    margin-left: 25px;
+  }
+
+
+  .estrella {
+    margin: auto;
+  }
+
+  .estrella h2 {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+    height: 2px;
+  }
+  .carrousel .tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 40%;
+    padding: 2px;
+    margin: 10px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  .subscripcion {
+    padding: 25px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 42%;
+    height: 180px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .promo .info p {
+    display: none !important;
+  }
+
+  .compra .promo .info button {
+    background-color: #f90081;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .compra .promo span {
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  .celular h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #434242;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .celular p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .globo h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .globo p {
+    font-size: 15px;
+  }
+
+  .globo button {
+    padding: 12px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .limonada {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .limonada h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .limonada p {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .limonada .pizza img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #contacto form {
+    width: 90%; 
+  }
+  
+  #contacto button {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ubicacion iframe{
+    width: 90%;
+  }
+
+  .ultimo {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .logo .diseno h3 {
+    padding: 5px;
+  }
+
+  .logo .diseno p {
+    padding: 2px;
+  }
+  .logo .diseno {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .logo .diseno img {
+    width: 90px;
+  }
+
+  /*Footer*/
+
+  footer {
+    max-width: 100%;
+    height: 1100px
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+
+}
+
+
+/* Ordenadores de sobremesa y portátiles
+- Medida estandar de pantalla resolucion : 1224px */
+@media only screen and (min-width: 1024px) and  (max-device-width: 1200px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .navbar h1 a{
+    display: none !important;
+  }
+
+  .hero {
+    height: 850px;
+  }
+
+  .estrella {
+    margin: auto;
+  }
+
+  .estrella h2 {
+    font-size: 32px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+  }
+  
+  .carrousel .tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 40%;
+    padding: 2px;
+    margin: 10px;
+    height: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 22px;
+  }
+  .card h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .card p {
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+  }
+
+  
+  .subscripcion {
+    padding: 25px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 20px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 42%;
+    height: 460px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+
+  .compra .promo .info p{
+    font-size: 25px;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+
+  .compra .promo .info button {
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .compra .promo span {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    width: 100px;
+    height: 100px;
+  }
+
+  /*Footer*/
+
+  footer {
+    max-width: 100%;
+    height: 1000px;
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width:1200px)and (max-device-width:1860px) {
+  
+  .estrella {
+    margin: auto;
+  }
+
+  .estrella h2 {
+    font-size: 32px;
+    margin: auto;
+  }
+
+  .estrella p {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+  }
+  
+  .carrousel .tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta .card {
+    width: 33%;
+    padding: 2px;
+    margin: 10px;
+    height: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card h2 {
+    padding: 2px;
+    font-size: 22px;
+  }
+  .card h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .card p {
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .icon img {
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+  }
+
+  
+  .subscripcion {
+    padding: 25px;
+  }
+
+  .subscripcion h2 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #434242;
+  }
+
+  .subscripcion p {
+    font-size: 20px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .compra {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .compra .promo {
+    width: 30%;
+    height: 460px;
+    background-color: #ece9ea;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  }
+
+  .compra .promo .info h3 {
+    color: #3e3a3c;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+
+  .compra .promo .info p{
+    font-size: 20px;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+
+  .compra .promo .info button {
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .compra .promo span {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .compra .promo img {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    width: 100px;
+    height: 100px;
+  }
+
+}
+

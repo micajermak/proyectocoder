@@ -188,7 +188,6 @@ header button:hover {
   max-width: 900px;
 }
 
-
 .gris {
   text-align: center;
 }
@@ -307,7 +306,6 @@ header button:hover {
   color: #f3f1f1;
 }
 
-
 .renta {
   display: flex;
   justify-content: center;
@@ -347,11 +345,9 @@ header button:hover {
   margin-top: 10px;
 }
 
-
-
-
 .seguridad {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 1000px;
   margin: auto;
@@ -390,12 +386,6 @@ header button:hover {
   text-align: center;
   margin-bottom: 50px;
 }
-
-
-
-
-
-
 
 /*-Propietarios*/
 .propiedad {
@@ -833,9 +823,18 @@ input::placeholder{
   color: #519516;
 }
 
-.bienestar {
+.abuelo{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.bienestar .circulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .circulo {
   display: grid;
@@ -1281,7 +1280,7 @@ input::placeholder{
   grid-area: img8;
 
   margin-top: 90px;
-  padding: 40px;
+  padding: 0px;
 
   background-color: #000;
 }
@@ -1297,5 +1296,1094 @@ footer p {
 }
 footer {
   background-color: #000;
-  height: 500px;
+  height: 100%;
+}
+
+.navbar{
+  color: #fff;
+  background-color: #fff;
+  font-size: 1px;
+  height: 1px;
+}
+
+.checkbox, .icons{
+  width: 1px;
+  height: 1px;
+}
+
+
+/*MEDIA QUERYS
+Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    display: none !important;;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+    font-size: 48px;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 25px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+  .propiedad h1{
+    font-size: 30px;
+  }
+  .peludos h1{
+    font-size: 30px;
+  }
+
+  .rapido h1{
+    font-size: 30px;
+  }
+
+  .hero h2{
+    font-size: 30px;
+  }
+
+  .hero ul{
+    width: 90%;
+    margin: auto;
+  }
+  .hero p, .propiedad p, .peludos p, .rapido p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hero button, .small button, .propiedad button, .peludos button, .rapido button{
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .sonrie, .small{
+    margin: auto;
+  }
+
+  .small img, .peludos img, .rapido img{
+    width: 100%;
+  }
+
+  .edificio ul li, {
+    width: 70%;
+  }
+  .auto ul li{
+    margin: auto;
+    width: 80%;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .grupo{
+    width: 100%;
+  }
+
+  .llamada{
+    height: 200px;
+  }
+  .llamada h3{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .llamada i{
+    font-size: 10px;
+  }
+  .sonrie h2, .small h2, .patas h2{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+  .sonrie p, .small p, .patas p{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  
+  .small h1{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .abuelo, .gris{
+    width: 100%;
+    margin: auto;
+  }
+  .gris h2, .vacunas h2{
+    font-size: 25px;
+  }
+
+
+
+  .gris p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pie, .diagnostico{
+    width: 300px;
+    height: 300px;
+  }
+  .pie h3, .diagnostico h3{
+    font-size: 20px;
+  }
+
+  .pie p, .diagnostico p{
+    font-size: 16px;
+  }
+
+  .tricolor button{
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bueno{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .inquilino, .circulo, .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .lucro{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lucro .fin{
+    width: 100%;
+    height: 100%;
+  }
+
+  .lucro .fin h3{
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .lucro .fin p{
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .lucro .fin button{
+    width: 40%;
+  }
+
+  .lucro .fin img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .paquete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .info2 h3{
+    font-size: 16px;
+  }
+  
+  .info .info2 {
+   width: 100%;
+
+  }
+
+  .abuelo img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #uno{
+    width: 100%;
+  }
+
+  #dos{
+    width: 100%;
+  }
+  
+  #uno,
+  #dos {
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  } 
+
+  .final{
+    width: 90%;
+    margin: auto;
+  }
+
+  .final h2{
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .final p{
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+  footer {
+    max-width: 100%;
+    height: 3100px;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .galeria .img1 img{
+    display: none !important;
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+}
+
+
+/*Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+- Medida estandar pantalla resolucion 320 x 480 */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    display: none !important;;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+    font-size: 48px;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 25px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+  .propiedad h1{
+    font-size: 30px;
+  }
+  .peludos h1{
+    font-size: 30px;
+  }
+
+  .rapido h1{
+    font-size: 30px;
+  }
+
+  .hero h2{
+    font-size: 30px;
+  }
+
+  .hero ul{
+    width: 90%;
+    margin: auto;
+  }
+  .hero p, .propiedad p, .peludos p, .rapido p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hero button, .small button, .propiedad button, .peludos button, .rapido button{
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .sonrie, .small{
+    margin: auto;
+  }
+
+  .small img, .peludos img, .rapido img{
+    width: 100%;
+  }
+
+  .edificio ul li, {
+    width: 70%;
+  }
+  .auto ul li{
+    margin: auto;
+    width: 80%;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .grupo{
+    width: 100%;
+  }
+
+  .llamada{
+    height: 200px;
+  }
+  .llamada h3{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .llamada i{
+    font-size: 10px;
+  }
+  .sonrie h2, .small h2, .patas h2{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+  .sonrie p, .small p, .patas p{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  
+  .small h1{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .abuelo, .gris{
+    width: 100%;
+    margin: auto;
+  }
+  .gris h2, .vacunas h2{
+    font-size: 25px;
+  }
+
+
+
+  .gris p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pie, .diagnostico{
+    width: 300px;
+    height: 300px;
+  }
+  .pie h3, .diagnostico h3{
+    font-size: 20px;
+  }
+
+  .pie p, .diagnostico p{
+    font-size: 16px;
+  }
+
+  .tricolor button{
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bueno{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .inquilino, .circulo, .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .lucro{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lucro .fin{
+    width: 100%;
+    height: 100%;
+  }
+
+  .lucro .fin h3{
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .lucro .fin p{
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .lucro .fin button{
+    width: 40%;
+  }
+
+  .lucro .fin img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .paquete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .info2 h3{
+    font-size: 16px;
+  }
+  
+  .info .info2 {
+   width: 100%;
+
+  }
+
+  .abuelo img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+
+  #uno{
+    width: 50%;
+  }
+
+  #dos{
+    width: 50%;
+  }
+  
+  #uno,
+  #dos {
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  } 
+
+  .final{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .final h2{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .final p{
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    max-width: 100%;
+    height: 2100px;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .galeria .img8{
+    margin: auto;
+  }
+
+  .abuelo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* iPads 
+#Dispositivo = Tablets, Ipads  
+- Medida estandar de pantalla resolucion 768px to 1024px */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+  .nav {
+    display: none !important;
+  }
+
+  header {
+    display: none !important;;
+  }
+
+  header a{
+    display: none !important;
+  }
+
+  .titulo a {
+    display: none !important;
+  }
+
+  .navbar {
+    height: 48px;
+    position: relative;
+    font-size: 48px;
+  }
+
+  .navbar h1 a{
+    text-align: center;
+    display: block;
+    padding: 20px 12px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #000;
+    font-weight: 550;
+    font-size: 25px;
+  }
+
+  .checkbox,
+  .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+    color: #434242;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .menu {
+    display: block;
+    top: 48px;
+  }
+
+  .checkbox:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fa-times {
+    display: block;
+  }
+
+  .menu {
+    width: 60%;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(47, 46, 46);
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(47, 46, 46);
+    display: block;
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .red {
+    font-size: 30px;
+    padding-top: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+  .propiedad h1{
+    font-size: 30px;
+  }
+  .peludos h1{
+    font-size: 30px;
+  }
+
+  .rapido h1{
+    font-size: 30px;
+  }
+
+  .hero h2{
+    font-size: 30px;
+  }
+
+  .hero ul{
+    width: 90%;
+    margin: auto;
+  }
+  .hero p, .propiedad p, .peludos p, .rapido p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .hero button, .small button, .propiedad button, .peludos button, .rapido button{
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .sonrie, .small{
+    margin: auto;
+  }
+
+  .small img, .peludos img, .rapido img{
+    width: 100%;
+  }
+
+  .edificio ul li, {
+    width: 70%;
+  }
+  .auto ul li{
+    margin: auto;
+    width: 80%;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .grupo{
+    width: 100%;
+  }
+
+  .llamada{
+    height: 200px;
+  }
+  .llamada h3{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .llamada i{
+    font-size: 10px;
+  }
+  .sonrie h2, .small h2, .patas h2{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+  .sonrie p, .small p, .patas p{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  
+  .small h1{
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .abuelo, .gris{
+    width: 100%;
+    margin: auto;
+  }
+  .gris h2, .vacunas h2{
+    font-size: 25px;
+  }
+
+
+
+  .gris p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pie, .diagnostico{
+    width: 300px;
+    height: 300px;
+  }
+  .pie h3, .diagnostico h3{
+    font-size: 20px;
+  }
+
+  .pie p, .diagnostico p{
+    font-size: 16px;
+  }
+
+  .tricolor button{
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bueno{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .inquilino, .circulo, .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .lucro{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lucro .fin{
+    width: 100%;
+    height: 100%;
+  }
+
+  .lucro .fin h3{
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .lucro .fin p{
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .lucro .fin button{
+    width: 40%;
+  }
+
+  .lucro .fin img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .paquete{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .info2 h3{
+    font-size: 16px;
+  }
+  
+  .info .info2 {
+   width: 100%;
+
+  }
+
+  .abuelo img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+
+  #uno{
+    width: 50%;
+  }
+
+  #dos{
+    width: 50%;
+  }
+  
+  #uno,
+  #dos {
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  } 
+
+  .final{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .final h2{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .final p{
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .abuelo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* Ordenadores de sobremesa y portátiles
+- Medida estandar de pantalla resolucion : 1224px */
+@media only screen and (min-width: 1024px) and  (max-device-width: 1224px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .navbar h1 a{
+    display: none !important;
+  }
+  .datos{
+    margin: auto;
+  }
+
+  .bienestar .circulo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }

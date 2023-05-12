@@ -201,9 +201,10 @@ header a:hover {
 }
 
 .compra {
+  width: 100%;
   padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -1077,7 +1078,6 @@ Smartphones (portrait & landscape)
   }
 }
 
-
 /*Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
 - Medida estandar pantalla resolucion 320 x 480 */
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -1230,6 +1230,7 @@ Smartphones (portrait & landscape)
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .tarjeta .card {
@@ -1821,7 +1822,6 @@ Smartphones (portrait & landscape)
   }
 
 }
-
 
 /* Ordenadores de sobremesa y portátiles
 - Medida estandar de pantalla resolucion : 1224px */
